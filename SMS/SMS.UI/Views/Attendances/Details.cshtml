@@ -1,0 +1,58 @@
+﻿@model SMS.BOL.Attendance
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Attendance</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IsPresent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsPresent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsCounted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsCounted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttendanceDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttendanceDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Grade.ClassName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Grade.ClassName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentInfo.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentInfo.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
